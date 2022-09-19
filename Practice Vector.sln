@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice Vector", "Practice Vector\Practice Vector.csproj", "{C3623930-4254-4B57-A9E8-CEE6DE9E8AEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryPainting", "..\GeometryPainting.csproj\GeometryPainting.csproj", "{A62E8811-66C0-4CCA-A140-1DA3FC70F7FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C3623930-4254-4B57-A9E8-CEE6DE9E8AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3623930-4254-4B57-A9E8-CEE6DE9E8AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3623930-4254-4B57-A9E8-CEE6DE9E8AEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A62E8811-66C0-4CCA-A140-1DA3FC70F7FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62E8811-66C0-4CCA-A140-1DA3FC70F7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A62E8811-66C0-4CCA-A140-1DA3FC70F7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A62E8811-66C0-4CCA-A140-1DA3FC70F7FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

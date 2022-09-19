@@ -1,5 +1,5 @@
 ﻿using System;
-
+using GeometryPainting;
 namespace GeometryTasks
 {
     public class Vector
