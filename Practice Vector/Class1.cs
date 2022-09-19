@@ -9,15 +9,15 @@ namespace GeometryTasks
         {
             return Geometry.GetLength(this);
         }
+
         public Vector Add (Vector vector)
         {
             return Geometry.Add(this, vector);
         }
+
         public bool Belongs(Segment segment)
         {
             return Geometry.IsVectorInSegment(this, segment);
-
-
         }
     }
 
@@ -28,9 +28,10 @@ namespace GeometryTasks
         {
             return Geometry.GetLength(this);
         }
-        public void Contains(Vector vector)
+
+        public bool Contains(Vector vector)
         {
-            Geometry.IsVectorInSegment(vector, this);
+            return Geometry.IsVectorInSegment(vector, this);
         }
     }
 
@@ -54,14 +55,12 @@ namespace GeometryTasks
 
         public static bool IsVectorInSegment(Vector vector, Segment segment)
         {
-            if (vector.X == segment.Begin.X && vector.X == segment.End.X && vector.Y ==
-                segment.Begin.Y && vector.Y == segment.End.Y)
+            if ((vector.X == segment.Begin.X || vector.X == segment.End.X)
+                && (vector.Y == segment.End.Y || vector.Y == segment.Begin.Y))
                 return true;
             else
-                return ((vector.X - segment.Begin.X) * (segment.End.Y - segment.Begin.Y) ==
-                    (segment.End.X - segment.Begin.X) * (vector.Y - segment.Begin.Y)) &&
-                    (vector.X >= segment.Begin.X && vector.X <= segment.End.X && vector.Y >=
-                    segment.Begin.Y && vector.Y <= segment.End.Y);
+                return ((vector.X - segment.Begin.X) * (vector.X - segment.End.X) <= 0)
+                    && ((vector.Y - segment.Begin.Y) * (vector.Y - segment.End.Y) < 0);
         }
     }
 }
